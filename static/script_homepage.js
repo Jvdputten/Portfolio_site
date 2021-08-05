@@ -27,7 +27,7 @@ function setTheme(mode){
     localStorage.setItem('theme', mode)
 }
 
-$('.content-wrapper').load('pages/main.html')
+$('.content-wrapper').load('pages/publications.html')
 
 $("#id-contact").click(function(){
     $(".content-wrapper").slideUp(function () {
@@ -39,7 +39,31 @@ $("#id-contact").click(function(){
 
 $("#id-main").click(function(){
     $(".content-wrapper").slideUp(function () {
-        $('.content-wrapper').load('pages/main.html', function () {
+        $('.content-wrapper').load('pages/home.html', function () {
+            $(".content-wrapper").slideDown();
+        });
+    });
+});
+
+$("#id-about").click(function(){
+    $(".content-wrapper").slideUp(function () {
+        $('.content-wrapper').load('pages/about.html', function () {
+            $(".content-wrapper").slideDown();
+        });
+    });
+});
+
+$("#id-projects").click(function(){
+    $(".content-wrapper").slideUp(function () {
+        $('.content-wrapper').load('pages/projects.html', function () {
+            $(".content-wrapper").slideDown();
+        });
+    });
+});
+
+$("#id-publications").click(function(){
+    $(".content-wrapper").slideUp(function () {
+        $('.content-wrapper').load('pages/publications.html', function () {
             $(".content-wrapper").slideDown();
         });
     });
