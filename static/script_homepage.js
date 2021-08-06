@@ -27,7 +27,7 @@ function setTheme(mode){
     localStorage.setItem('theme', mode)
 }
 
-$('.content-wrapper').load('pages/publications.html')
+$('.content-wrapper').load('pages/about.html')
 
 $("#id-contact").click(function(){
     $(".content-wrapper").slideUp(function () {
@@ -38,35 +38,37 @@ $("#id-contact").click(function(){
 });
 
 $("#id-main").click(function(){
-    $(".content-wrapper").slideUp(function () {
+    $(".content-wrapper").slideUp('slow', function () {
         $('.content-wrapper').load('pages/home.html', function () {
-            $(".content-wrapper").slideDown();
+            $(".content-wrapper").slideDown('slow');
         });
     });
 });
 
 $("#id-about").click(function(){
-    $(".content-wrapper").slideUp(function () {
+    $(".content-wrapper").slideUp('slow', function () {
         $('.content-wrapper').load('pages/about.html', function () {
-            $(".content-wrapper").slideDown();
+            $(".content-wrapper").slideDown('slow');
         });
     });
 });
 
 $("#id-projects").click(function(){
-    $(".content-wrapper").slideUp(function () {
+    $(".content-wrapper").slideUp('slow', function () {
         $('.content-wrapper').load('pages/projects.html', function () {
-            $(".content-wrapper").slideDown();
+            $(".content-wrapper").slideDown('slow');
         });
     });
 });
 
 $("#id-publications").click(function(){
-    $(".content-wrapper").slideUp(function () {
+    $(".content-wrapper").slideUp('slow', function () {
         $('.content-wrapper').load('pages/publications.html', function () {
-            $(".content-wrapper").slideDown();
+            $(".content-wrapper").slideDown('slow');
         });
     });
 });
+
+
 
 
