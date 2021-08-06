@@ -32,7 +32,7 @@ $("a[href='#top']").click(function() {
   return false;
 });
 
-$('.content-wrapper').load('pages/publications.html')
+$('.content-wrapper').load('pages/contact.html')
 
 $("#id-contact").click(function(){
     $(".content-wrapper").slideUp(function () {
