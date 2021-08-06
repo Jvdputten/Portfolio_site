@@ -27,7 +27,12 @@ function setTheme(mode){
     localStorage.setItem('theme', mode)
 }
 
-$('.content-wrapper').load('pages/about.html')
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
+$('.content-wrapper').load('pages/publications.html')
 
 $("#id-contact").click(function(){
     $(".content-wrapper").slideUp(function () {
@@ -68,6 +73,7 @@ $("#id-publications").click(function(){
         });
     });
 });
+
 
 
 

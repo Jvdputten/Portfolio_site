@@ -38,6 +38,11 @@
     font-size: 12px;
 }
 
+.pub-note-2{
+    color: var(--accentColor2);
+    font-size: 12px;
+}
+
 .pub-journal{
     font-size: 12px;
     color: var(--mainText);
