@@ -183,7 +183,7 @@ h6 { font-size: 16px;
   border: 2px solid var(--borderColor); /* Remove borders */
   outline: none; /* Remove outline */
   background-color: var(--backgroundColor); /* Set a background color */
-  color: white; /* Text color */
+  color: var(--mainText); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -225,6 +225,10 @@ h6 { font-size: 16px;
         justify-content: center;
     }
 
+    .nav-wrapper{
+        justify-content: center;
+    }
+
     .links-wrapper{
         margin: 8px;
         grid-template-rows: 1fr 1fr;
@@ -233,8 +237,8 @@ h6 { font-size: 16px;
             'publications-button projects-button'
     }
 
-    .browser-dot{
-        display: none;
+    .dots-wrapper{
+        display:none;
     }
 
     .intro-wrapper{
