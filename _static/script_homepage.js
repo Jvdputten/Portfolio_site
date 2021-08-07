@@ -12,16 +12,16 @@ $(document).on('click', '.theme-dot', function () {
 
 function setTheme(mode){
     if(mode == 'light'){
-        document.getElementById('theme-style').href = 'static/default_homepage.css'
+        document.getElementById('theme-style').href = '_static/default_homepage.css'
     }
     if(mode == 'blue'){
-        document.getElementById('theme-style').href = 'static/blue.css'
+        document.getElementById('theme-style').href = '_static/blue.css'
     }
     if(mode == 'green'){
-        document.getElementById('theme-style').href = 'static/green.css'
+        document.getElementById('theme-style').href = '_static/green.css'
     }
     if(mode == 'purple'){
-        document.getElementById('theme-style').href = 'static/purple.css'
+        document.getElementById('theme-style').href = '_static/purple.css'
     }
 
     localStorage.setItem('theme', mode)
