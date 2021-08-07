@@ -196,15 +196,24 @@ h6 { font-size: 16px;
 
 @media screen and (max-width:1200px){
     .main-container{
-    width: 95%;
+        width: 95%;
 }
     #myBtn {
         right: 40px;
+        bottom: 30px;
     }
 
 }
 
 @media screen and (max-width:800px){
+    .main-container{
+        width: 100%;
+}
+    #myBtn {
+        bottom: 30px;
+    }
+
+
     .main-wrapper{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -222,6 +231,15 @@ h6 { font-size: 16px;
         grid-template-areas:
             'main-button about-button'
             'publications-button projects-button'
+    }
+
+    .browser-dot{
+        display: none;
+    }
+
+    .intro-wrapper{
+        margin-bottom: 0;
+        border-radius: 0;
     }
 
     #id-main{border-bottom: 1px solid var(--mainText)}
