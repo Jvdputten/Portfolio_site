@@ -27,10 +27,13 @@
 
 }
 
-html, body{
+html {
     padding: 0;
     margin: 0;
-    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
 }
 
 body *{
@@ -67,7 +70,7 @@ h6 { font-size: 16px;
     background-color: var(--backgroundColor);
     border-bottom:1px solid var(--borderColor);
     overflow: auto;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .s2{
@@ -79,6 +82,7 @@ h6 { font-size: 16px;
 .main-container{
     width: 1200px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .greeting-wrapper{
@@ -169,10 +173,35 @@ h6 { font-size: 16px;
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 }
 
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 90px; /* Place the button at the bottom of the page */
+  right: calc(50% - 570px); /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 2px solid var(--borderColor); /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--previewBG); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 @media screen and (max-width:1200px){
     .main-container{
     width: 95%;
 }
+    #myBtn {
+        right: 40px;
+    }
+
 }
 
 @media screen and (max-width:800px){
