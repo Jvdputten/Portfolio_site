@@ -48,7 +48,7 @@ $("#myBtn").click(function() {
 });
 
 
-$('.content-wrapper').load('pages/projects.html')
+$('.content-wrapper').load('pages/home.html')
 
 $("#id-contact").click(function(){
     $(".content-wrapper").slideUp(function () {

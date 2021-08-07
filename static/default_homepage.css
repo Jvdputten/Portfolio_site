@@ -182,7 +182,7 @@ h6 { font-size: 16px;
   z-index: 99; /* Make sure it does not overlap */
   border: 2px solid var(--borderColor); /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: var(--previewBG); /* Set a background color */
+  background-color: var(--backgroundColor); /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -220,12 +220,11 @@ h6 { font-size: 16px;
         margin: 8px;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            'main-button about-button projects-button'
-            'publications-button contact-button .'
+            'main-button about-button'
+            'publications-button projects-button'
     }
 
     #id-main{border-bottom: 1px solid var(--mainText)}
     #id-about{border-bottom: 1px solid var(--mainText)}
-    #id-projects{border-bottom: 1px solid var(--mainText)}
 }
 
